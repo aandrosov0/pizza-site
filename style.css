@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Amatic SC';
+}
+
+.navbar {
+    position: fixed;
+    font-size: 24px;
+    width: 100%;
+    background-color: black;
+    filter: opacity(50%);
+}
+
+.navbar a {
+    padding: 12px 0;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    filter: opacity(100%);
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/images/pizza.jpg');
+    min-height: 90%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.hero .section {
+    padding: 162px 0;
+    text-align: center;
+}
+
+.hero .section span {
+    font-size: 132px;
+}
+
+.hero .section button {
+    margin-top: 48px;
+    color: white;
+    padding: 16px;
+    background-color: black;
+    border: none;
+    font-size: 48px;
+}
+
+.hero .section button:hover {
+    background-color: #c2c0c0;
+    color: black
+}
+
+.hero .info {
+    font-size: 28px;
+    padding: 8px;
+    background-color: black;
+    display: inline-block;
+}
+
+.menu {
+    padding: 60px 192px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.menu>p, .about>p, .contact>p{
+    font-size: 82px;
+}
+
+.menu .section, .about .section {
+    margin-top: 82px;
+}
+
+.menu .sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .sections button {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 38px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.menu .sections .current, .menu .sections button:hover {
+    background-color: #ca2f2f;
+}
+
+.menu .main {
+    color: black;
+    text-align: left;
+    background-color: white;
+}
+
+.menu .main ul {
+    display: none;
+}
+
+.menu .main .current {
+    display: block;
+}
+
+.menu .main ul li {
+    padding: 32px 15px;
+    list-style: none;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.menu .main ul li * {
+    display: inline-block;
+}
+
+#ingredients {
+    margin-top: 48px;
+    font-size: 32px;
+    display: block;
+    color: #686868;
+}
+
+#price {
+    font-size: 38px;
+    margin-right: 15px;
+    float: right;
+    background-color: #5a5a5a;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.about {
+    padding: 60px 192px;
+    color: white;
+    text-align: center;
+    background-color: #805252;
+    text-align: center;
+}
+
+.about .section {
+    line-height: 2em;
+    text-align: start;
+}
+
+.about .section p {
+    font-size: 22px;
+}
+
+.about span {
+    font-weight: bold;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about .chef {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3em;
+}
+
+.about .chef img {
+    width: 15%;
+    border: none;
+    border-radius: 50%;
+}
+
+.about .timetable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 3em;
+}
+
+
+.about .timetable:last-child {
+    margin-right: 300px;
+}
+
+.contact {
+    color: white;
+    text-align: center;
+    background-color: #6f7c88;
+}
+
+.contact>img {
+    width: 100%;
+}
+
+.contact>p {
+    margin-top: 60px;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+.contact .section {
+    font-size: 24px;
+    padding: 60px 192px;
+    text-align: start;
+}
+
+.contact .section form input {
+    width: 100%;
+    height: 62px;
+    padding: 0 6px;
+    font-size: 24px;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    font-size: 32px;
+    color:white;
+}
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu, .about, .contact .section {
+        padding: 169px 0;
+        margin: 0;
+    }
+
+    .about * {
+        text-align: center;
+    }
+
+    .about .timetable {
+        width: 100%;
+        display: block;
+    }
+}

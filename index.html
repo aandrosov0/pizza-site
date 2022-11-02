@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restauraunt</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <script src="/js.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>        
+    </nav>
+    <header class="hero">
+        <div class="section">
+            <span>Thin<br>Crust Pizza<br></span>
+            <button>Let Me See The Menu</button>
+        </div>
+        <div class="info">
+            Open From 10AM To 12PM
+        </div>
+    </header>
+    <div class="menu">
+        <p>The Menu</p>
+        <div class="section">
+            <div class="sections">
+                <button class="current" onclick="setMenu(this);">pizza</button>
+                <button onclick="setMenu(this);">salads</button>
+                <button onclick="setMenu(this);">starter</button>
+            </div>
+            <div class="main" id="menu">
+                <ul id="pizza" class="current">
+                    <li>
+                        <h1>Margherita</h1>
+                        <p id="price">$12.50</p>
+                        <p id="ingredients">fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    </li>
+                    <li>
+                        <h1>Formaggio</h1>
+                        <p id="price">$15.50</p>
+                        <p id="ingredients">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    </li>
+                    <li>
+                        <h1>Chicken</h1>
+                        <p id="price">$17.00</p>
+                        <p id="ingredients">Fresh tomatoes, mozzarella, chicken, onions</p>
+                    </li>
+                </ul>
+                <ul id="salads">
+                    <li>
+                        <h1>Lasagna</h1>
+                        <p id="price">$13.50</p>
+                        <p id="ingredients">Special sauce, mozzarella, parmesan, ground beef</p>
+                    </li>
+                    <li>
+                        <h1>Ravioli</h1>
+                        <p id="price">$14.50</p>
+                        <p id="ingredients">Ravioli filled with cheese</p>
+                    </li>
+                    <li>
+                        <h1>Spaghetti Classica</h1>
+                        <p id="price">$11.00</p>
+                        <p id="ingredients">Fresh tomatoes, onions, ground beef</p>
+                    </li>
+                </ul>
+                <ul id="starter">
+                    <li>
+                        <h1>Today's Soup </h1>
+                        <p id="price">$5.50</p>
+                        <p id="ingredients">Ask the waiter</p>
+                    </li>
+                    <li>
+                        <h1>Bruschetta</h1>
+                        <p id="price">$8.50</p>
+                        <p id="ingredients">Bread with pesto, tomatoes, onion, garlic</p>
+                    </li>
+                    <li>
+                        <h1>Garlic bread</h1>
+                        <p id="price">$9.50</p>
+                        <p id="ingredients">Grilled ciabatta, garlic butter, onions</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <p>About</p>
+        <div class="section">
+            <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br>
+            <div class="chef">
+                <p><span>The Chef?</span> Mr. Italiano himself<br>We are proud of our interiors.</p>
+                <img src="/images/chef.jpg" alt="Mr. Italiano">
+            </div>
+            <br>
+            <img src="/images/onepage_restaurant.jpg" alt="Restauraunt">
+            <br>
+            <br>
+            <h1>Opening hours</h1>
+            <br>
+            <div class="timetable">
+                <div class="row">
+                    <p>Mon & Tue CLOSED<br>Wednesday 10.00 - 24.00<br>Thursday 10:00 - 24:00</p>
+                </div>
+                <div class="row">
+                    <p>Friday 10:00 - 12:00<br>Saturday 10:00 - 23:00<br>Sunday Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <img src="/images/map.jpg" alt="">
+        <p>Contact</p>
+        <div class="section">
+            <p>Find us at some address at some place or call us at 05050515-122330</p><br>
+            <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p><br>
+            <p><span>Reserve</span> a table, ask for today's special or just send us a message:</p><br>
+            <form>
+                <input type="text" placeholder="Name"><br><br>
+                <input type="text" placeholder="How many people"><br><br>
+                <input type="datetime-local"><br><br>
+                <input type="text" placeholder="Message/Special requirements"><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Powered by Anton Androsov</p>
+    </footer>
+</body>
+</html>
